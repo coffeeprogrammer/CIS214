@@ -2,7 +2,7 @@
 // Author:  Chad Botting
 // Course:  CIS 214, fall 2012
 // Date:    September 11, 2012
-// Module 03 Homework, CIS 214, Problem 4, descrition
+// Module 03 Homework, CIS 214, Problem 4, a class for storing information about possible ice cream sundaes
 
 public class IceCreamSundae
 {
@@ -19,7 +19,7 @@ public class IceCreamSundae
 
 	public String getDescription()
 	{
-		return "This ice cream sundae has " + getScoops() + " scoops and " + getToppings() + " toppings";
+		return "This ice cream sundae has " + getScoops() + " scoops and " + getToppings() + " toppings and it costs ", this.calcCost();
 	}
 
 	public void setScoops(int s)
@@ -40,7 +40,6 @@ public class IceCreamSundae
 	public int getToppings()
 	{
 		return numOfToppings;
-
 	}
 
 	private int numOfScoops;

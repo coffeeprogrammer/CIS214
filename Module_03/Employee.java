@@ -2,7 +2,7 @@
 // Author:  Chad Botting
 // Course:  CIS 214, fall 2012
 // Date:    September 12, 2012
-// Module 03 Homework, CIS 214, Problem 2, Description
+// Module 03 Homework, CIS 214, Problem 2, class for tracking employee information
 
 public class Employee
 {
@@ -59,4 +59,5 @@ public class Employee
     private String firstName;
     private String lastName;
     private double monthlySalary;
+
 }  // end of Employee class
