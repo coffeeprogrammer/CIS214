@@ -19,7 +19,10 @@ public class IceCreamSundae
 
 	public String getDescription()
 	{
-		return "This ice cream sundae has " + getScoops() + " scoops and " + getToppings() + " toppings and it costs ", this.calcCost();
+		// return a description of the ice cream sundae
+		// not sure if I should add String.valueOf to the getScoops() and getToppings() part.
+		// formatting the the value returned from calcCost() to show two decimals after the decimal point
+		return "This ice cream sundae has " + getScoops() + " scoops and " + getToppings() + " toppings and it costs $" + String.format("%.2f", calcCost());
 	}
 
 	public void setScoops(int s)
@@ -42,6 +45,7 @@ public class IceCreamSundae
 		return numOfToppings;
 	}
 
+	// private data members
 	private int numOfScoops;
 	private int numOfToppings;
 }

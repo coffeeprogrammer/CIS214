@@ -15,7 +15,7 @@ public class DateTest
 
         Scanner DateInput = new Scanner(System.in);
         // cool, I have NEVER used regular expression in a program before.
-        DateInput.useDelimiter("[/ \n]");    // change the Scanner default delimiter from white space
+        DateInput.useDelimiter("[/\r]");    // change the Scanner default delimiter from white space
                                              // to a back slash, found this in the JAVA API docs and the newline thing
 
         // when I first did this I assumed java would automatically cast to right type in the

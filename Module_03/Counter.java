@@ -12,7 +12,7 @@ public class Counter
 	public Counter()
 	{
 		// the default and only construtor
-		// set the initial value of the counter to
+		// set the initial value of the counter to zero
 		counterVar = 0;
 	}
 

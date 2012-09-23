@@ -20,7 +20,7 @@ public class HelloApplet extends JApplet //  JApplet is the super class of Hello
 
         // i believe that the following line would return false if it was "has-a" relationship
         // because HelloApplet is a implementation of JApplet it returns true
-        System.err.println(this instanceof JApplet);
+        // System.err.println(this instanceof JApplet);  we will remove this, as this has not been covered yet
         // you have to make the java console visible to see the true output.
     }   // end of paint method
 } // end class HelloApplet

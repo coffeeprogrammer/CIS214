@@ -4,7 +4,6 @@
 // Date:    September 22, 2012
 // Module 03 Homework, CIS 214, Problem 3, test program for Counter class
 
-
 public class CounterTest
 {
 	public static void main(String[] args)

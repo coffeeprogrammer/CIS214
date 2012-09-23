@@ -17,7 +17,6 @@ public class EmployeeTest
         System.out.printf("%s %s makes %.2f in a year \n", objGingerWorker.getFirstName(), objGingerWorker.getLastName(),
                 12*objGingerWorker.getMonthlySalary());
 
-        // whatever rest of this stuff is easy I will finish later
         // give each employee a 10% raise
 
         objFredWorker.setMonthlySalary(objFredWorker.getMonthlySalary() + objFredWorker.getMonthlySalary() * .10);        // giving fred a 10% raise
@@ -31,7 +30,6 @@ public class EmployeeTest
 
 		System.out.printf("%s %s makes %.2f in a year \n", objGingerWorker.getFirstName(), objGingerWorker.getLastName(),
                 12*objGingerWorker.getMonthlySalary());
-
 
     } // end of main method
 } // end of EmployeeTest class
