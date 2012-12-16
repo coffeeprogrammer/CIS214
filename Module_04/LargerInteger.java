@@ -36,7 +36,5 @@ public class LargerInteger
 		{
 			System.out.println("the two numbers are equal");
 		}
-
-
 	} // end of main method
 } // end of LargerInteger

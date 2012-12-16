@@ -2,7 +2,7 @@
 // Author:  Chad Botting
 // Course:  CIS 214, fall 2012
 // Date:    September 20, 2012
-// Module 04 Homework, CIS 214, Problem 3, descrition
+// Module 04 Homework, CIS 214, Problem 3, Makes a rectangular shape
 
 import java.util.Scanner;
 

@@ -12,10 +12,14 @@ public class Point
     // constructor(s)
     public Point(double X, double Y)
     {
-        // setX(X);  mark said not to call methods from the constructor in a previous assignment.
-        // setY(Y);
         xCoordinate = X;
         yCoordinate = Y;
+    }
+
+    public Point()
+	{
+	    xCoordinate = 0;
+	    yCoordinate = 0;
     }
 
     // accessors

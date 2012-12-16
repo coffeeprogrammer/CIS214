@@ -11,29 +11,37 @@ public class BottingPoint
 {
     public static void main(String[] args)
     {
-        // TODO: add a Scanner or something so we don't have hard code values in.
-		// I have not added the Scanner yet because I have to research the delimiters so that I know
-		// I am parsing the a X,Y on a single line correct, I think this will make the program look more 
-		// professional, but I want to make sure I am doing it 100% correct
         double xIntersection;
         double yIntersection;
+        double x,y;
+        Scanner input = new Scanner(System.in);
 
         // any variable or object with Alpha in its name refers to the first line
         // any variable or object with Beta in its name refers to the second line
-        // System.out.println("You will enter the coordinates like this: \"4,5\" and then press enter");
+        //input
+        System.out.println("You will enter the coordinates: x enter y enter");
 
         System.out.println("Please input the coordinates for point one for line one");
-        Point oPointOneAlpha = new Point(-3.4, -5);
+        x = input.nextDouble();
+        y = input.nextDouble();
+        Point oPointOneAlpha = new Point(x, y);
 
         System.out.println("Please input the coordinates for point two for line one");
-        Point oPointTwoAlpha = new Point(5, 6.7);
+        x = input.nextDouble();
+        y = input.nextDouble();
+        Point oPointTwoAlpha = new Point(x, y);
 
         System.out.println("Please input the coordinates for point three for line two");
-        Point oPointOneBeta = new Point(-7.9, 23);
+        x = input.nextDouble();
+        y = input.nextDouble();
+        Point oPointOneBeta = new Point(x, y);
 
         System.out.println("Please input the coordinates for point four for line two");
-        Point oPointTwoBeta = new Point(1.26, -7.86);
+        x = input.nextDouble();
+        y = input.nextDouble();
+        Point oPointTwoBeta = new Point(x, y);
 
+		// processing
         double a_Alpha        = (oPointTwoAlpha.getY() - oPointOneAlpha.getY());
         double b_Alpha        = (oPointOneAlpha.getX() - oPointTwoAlpha.getX());
         double c_Alpha        = (oPointOneAlpha.getY()*oPointTwoAlpha.getX()) - (oPointTwoAlpha.getY()*oPointOneAlpha.getX());
@@ -45,19 +53,16 @@ public class BottingPoint
         double distance_Alpha = Math.sqrt(Math.pow(b_Alpha,2) + Math.pow(a_Alpha,2));
         double distance_Beta  = Math.sqrt(Math.pow(b_Beta, 2) + Math.pow(a_Beta, 2));
 
+        // determine the intersection point for x and y
+        xIntersection = ((b_Alpha * c_Beta) - (b_Beta * c_Alpha)) / ((a_Alpha * b_Beta) - (a_Beta * b_Alpha));
+        yIntersection = ((c_Alpha * a_Beta) - (c_Beta * a_Alpha)) / ((a_Alpha * b_Beta) - (a_Beta * b_Alpha));
 
-        if(true == false) // TODO: put a condition here to check if line Alpha is the same as line Beta
-        {
-            // lines are the same, sorry, this would led to divide by zero error
-            System.out.println("The lines appear to be the same");
-        }
-        else
-        {
-            // determine the intersection point for x and y
-            xIntersection = ((b_Alpha * c_Beta) - (b_Beta * c_Alpha)) / ((a_Alpha * b_Beta) - (a_Beta * b_Alpha));
-            yIntersection = ((c_Alpha * a_Beta) - (c_Beta * a_Alpha)) / ((a_Alpha * b_Beta) - (a_Beta * b_Alpha));
-            System.out.println("Your X intersection point is: " + String.valueOf(xIntersection));
-            System.out.println("Your Y intersection point is: " + String.valueOf(yIntersection));
-        }
+        Point oPointIntersection = new Point(xIntersection, yIntersection);
+
+        // output
+        System.out.println("Distance of line one: " + distance_Alpha);
+        System.out.println("Distance of line one: " + distance_Beta);
+        System.out.println("The point of intersection is: " + oPointIntersection.toString());
+
     } // end of main method
 } // end of PointTest class

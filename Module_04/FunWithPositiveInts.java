@@ -1,5 +1,4 @@
 // FunWithPositiveInts.java
-// FunWithPositiveInts.java
 // Author:  Chad Botting
 // Course:  CIS 214, fall 2012
 // Date:    September 26, 2012
